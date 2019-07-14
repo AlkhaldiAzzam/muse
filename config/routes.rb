@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root 'artist#index' #idont know what this does...yet
+ resources :artists , :songs  #This will make the routes for you (EVERY. SINGLE. ROUTE you need), just put in the console : 'rails routes'
+ 
+
 end
